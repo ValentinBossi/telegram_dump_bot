@@ -4,12 +4,17 @@
   "description": "telegram PoC",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.31.0",
     "ts-node": "^8.4.1",
     "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.30.0"
   }
 }
