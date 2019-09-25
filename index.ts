@@ -2,6 +2,7 @@ import TelegramBot from 'node-telegram-bot-api';
 import express from 'express';
 
 const port = process.env.PORT || 3000;
+const token = process.env.TOKEN;
 const app = express();
 
 app.get('/', function (req, res) {
@@ -11,9 +12,6 @@ app.get('/', function (req, res) {
 app.listen(port, function () {
     console.log('Example app listening on port ' + port);
 });
-
-
-const token = '954158159:AAFRwclM4s-ERRLbUicebYpGR_0Oz7cuLtA';
 
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, {polling: true});
